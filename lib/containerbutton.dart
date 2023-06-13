@@ -30,7 +30,7 @@ class ContainerButton extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.blue,
               ),
-              child: Center(
+              child: const Center(
                 child: Text('Login',
                 style: TextStyle(color: Colors.white,
                 fontSize: 25,
@@ -42,7 +42,8 @@ class ContainerButton extends StatelessWidget {
             InkWell(
               onTap: (){
                 print('success from inkwell');
-                Navigator.push(context, 
+
+                                Navigator.push(context, 
                 MaterialPageRoute(builder: (context)=> InputField()));
                 
 
@@ -55,7 +56,7 @@ class ContainerButton extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.red,
               ),
-              child: Center(
+              child: const Center(
                 child: Text('Register',
                 style: TextStyle(color: Colors.white,
                 fontSize: 25,
