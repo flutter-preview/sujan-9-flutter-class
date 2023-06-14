@@ -1,3 +1,5 @@
+import 'package:classdemo/login-signupscreen/login.dart';
+import 'package:classdemo/login-signupscreen/signup.dart';
 import 'package:flutter/material.dart';
 
 class HomePageScreen extends StatelessWidget {
@@ -45,7 +47,7 @@ class HomePageScreen extends StatelessWidget {
                         ),
                         onPressed: (){
                           
-                       // Navigator.push(context, MaterialPageRoute(builder: (context)=> const HomePageScreen()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const LoginPage()));
                       }, child: const Text('Login',
                       style: TextStyle(color: Colors.black,
                       )),)),
@@ -66,8 +68,8 @@ class HomePageScreen extends StatelessWidget {
                         ),
                         onPressed: (){
                           
-                       // Navigator.push(context, MaterialPageRoute(builder: (context)=> const HomePageScreen()));
-                      }, child: const Text('Login',
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const SignUpPage()));
+                      }, child: const Text('Sign Up',
                       style: TextStyle(color: Colors.white,
                       )),)),
                     
