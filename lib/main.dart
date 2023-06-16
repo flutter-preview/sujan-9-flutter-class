@@ -1,8 +1,12 @@
+import 'package:classdemo/bottombar.dart';
 import 'package:classdemo/buttons.dart';
 import 'package:classdemo/homepage.dart';
 import 'package:classdemo/login-signupscreen/homepage.dart';
+import 'package:classdemo/stackpage.dart';
 import 'package:classdemo/style.dart';
 import 'package:classdemo/textfield.dart';
+import 'package:classdemo/widgets/customwidget.dart';
+import 'package:classdemo/widgets/listview.dart';
 import 'package:flutter/material.dart';
 
 import 'containerbutton.dart';
@@ -24,7 +28,9 @@ class MyApp extends StatelessWidget {
         
         primarySwatch: Colors.blue,
       ),
-      home: const HomePageScreen(),
+   // home: const HomePageScreen(),
+     home: BottomBarExample(),
+
     );
   }
 }
