@@ -3,6 +3,7 @@ import 'package:classdemo/buttons.dart';
 import 'package:classdemo/homepage.dart';
 import 'package:classdemo/login-signupscreen/homepage.dart';
 import 'package:classdemo/stackpage.dart';
+import 'package:classdemo/statefulwidget.dart';
 import 'package:classdemo/style.dart';
 import 'package:classdemo/textfield.dart';
 import 'package:classdemo/widgets/customwidget.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
    // home: const HomePageScreen(),
-     home: BottomBarExample(),
+     home: Example(),
 
     );
   }
