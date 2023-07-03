@@ -26,6 +26,7 @@ class _ExampleState extends State<Example> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
+            count++;
             
           name = 'hello world';
            

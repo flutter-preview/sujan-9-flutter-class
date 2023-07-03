@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class BottomBarExample extends StatefulWidget {
-   BottomBarExample({super.key});
+  const BottomBarExample({super.key});
 
   @override
   State<BottomBarExample> createState() => _BottomBarExampleState();
 }
 
 class _BottomBarExampleState extends State<BottomBarExample> {
- int curentIndex = 0;
+  int curentIndex = 0;
 
   List<Widget> _widgetOptions = <Widget>[
     Text('Home Page'),
@@ -30,13 +30,12 @@ class _BottomBarExampleState extends State<BottomBarExample> {
         child: Icon(Icons.add),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        
         onTap: (value) {
           setState(() {
             curentIndex = value;
           });
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
@@ -53,7 +52,7 @@ class _BottomBarExampleState extends State<BottomBarExample> {
             backgroundColor: Colors.blue,
           ),
         ],
-        ),
+      ),
     );
   }
 }
